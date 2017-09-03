@@ -7,7 +7,7 @@
 %global gver .%{gitdate}git%{gitversion}
 %global branch stable
 
-#global _with_bootstrap 1
+%global _with_bootstrap 1
 
 %{?_with_bootstrap:
 %global _without_gpac 1
@@ -201,6 +201,9 @@ install -pm644 generic/{AUTHORS,COPYING} %{buildroot}%{_pkgdocdir}/
 %endif
 
 %changelog
+* Sun Sep 03 2017 Jajauma's Packages <jajauma@yandex.ru> - 0.148-22.20170521gitaaa9aa8_bootstrap
+- Bootstrap current stable version
+
 * Thu Aug 31 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 0.148-22.20170521gitaaa9aa8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
 
